@@ -65,6 +65,9 @@
         android:padding="10dp"
         android:background="@drawable/rounded_rectangle"
         android:id="@+id/et1"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:maxLines="1"
         />
 
     <EditText
@@ -79,6 +82,7 @@
         android:inputType="numberPassword"
         android:background="@drawable/rounded_rectangle"
 
+
         />
 
     <Button
@@ -90,7 +94,9 @@
         android:background="@drawable/rounded_rectangle2"
         android:text="GO !"
         android:padding="15dp"
-        android:textColor="#fff"/>
+        android:textColor="#fff"
+        android:onClick="doLogin"
+        android:id="@+id/login_btn"/>
 
 
 </RelativeLayout>
